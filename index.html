@@ -3,331 +3,289 @@
 <html class="dark" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>EL AUDITOR - Auditando al Poder</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&amp;family=Merriweather:ital,wght@0,400;0,700;1,400&amp;family=Montserrat:wght@600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "secondary-fixed": "#dae2fd",
-                        "secondary": "#bec6e0",
-                        "inverse-on-surface": "#2d3133",
-                        "outline-variant": "#5e3f3b",
-                        "secondary-container": "#3f465c",
-                        "tertiary-container": "#6a758a",
-                        "surface-container-low": "#191c1e",
-                        "inverse-primary": "#c0000b",
-                        "surface-bright": "#363a3b",
-                        "surface": "#101415",
-                        "on-background": "#e0e3e5",
-                        "on-tertiary-container": "#fefcff",
-                        "surface-dim": "#101415",
-                        "tertiary-fixed-dim": "#bcc7de",
-                        "surface-container-high": "#272a2c",
-                        "primary-container": "#e61919",
-                        "outline": "#ae8782",
-                        "secondary-fixed-dim": "#bec6e0",
-                        "on-primary-fixed-variant": "#930006",
-                        "on-secondary-fixed-variant": "#3f465c",
-                        "on-tertiary-fixed": "#111c2d",
-                        "on-error": "#690005",
-                        "on-tertiary": "#263143",
-                        "on-secondary": "#283044",
-                        "inverse-surface": "#e0e3e5",
-                        "surface-container-highest": "#323537",
-                        "on-surface-variant": "#e8bcb6",
-                        "background": "#101415",
-                        "on-error-container": "#ffdad6",
-                        "tertiary-fixed": "#d8e3fb",
-                        "on-primary": "#690003",
-                        "surface-variant": "#323537",
-                        "primary-fixed-dim": "#ffb4aa",
-                        "on-primary-fixed": "#410001",
-                        "tertiary": "#bcc7de",
-                        "on-primary-container": "#fffbff",
-                        "on-surface": "#e0e3e5",
-                        "primary": "#ffb4aa",
-                        "on-secondary-container": "#adb4ce",
-                        "error-container": "#93000a",
-                        "surface-tint": "#ffb4aa",
-                        "primary-fixed": "#ffdad5",
-                        "on-secondary-fixed": "#131b2e",
-                        "on-tertiary-fixed-variant": "#3c475a",
-                        "surface-container": "#1d2022",
-                        "surface-container-lowest": "#0b0f10",
-                        "error": "#ffb4ab"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "unit": "4px",
-                        "gutter": "24px",
-                        "margin-desktop": "64px",
-                        "margin-mobile": "16px",
-                        "max-width": "1280px"
-                    },
-                    "fontFamily": {
-                        "headline-md": ["Montserrat"],
-                        "headline-lg": ["Montserrat"],
-                        "audit-stat": ["Montserrat"],
-                        "display-lg": ["Montserrat"],
-                        "label-caps": ["JetBrains Mono"],
-                        "headline-lg-mobile": ["Montserrat"],
-                        "body-md": ["Merriweather"],
-                        "body-lg": ["Merriweather"]
-                    },
-                    "fontSize": {
-                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
-                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
-                        "audit-stat": ["20px", { "lineHeight": "1.0", "fontWeight": "800" }],
-                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700" }],
-                        "headline-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "700" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
-                    }
-                }
-            }
-        }
-    </script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Merriweather:ital,wght@0,400;0,700;1,400&amp;family=JetBrains+Mono:wght@700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<title>EL AUDITOR - Auditando al Poder</title>
 <style>
         .material-symbols-outlined {
-          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .material-symbols-outlined.fill {
-            font-variation-settings: 'FILL' 1;
+        body {
+            background-color: #101415; /* surface-dim */
         }
-        
-        /* Subtle brutalist structural lines */
-        .structural-grid {
-            background-image: 
-                linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
-            background-size: 40px 40px;
+        .newspaper-grid {
+            border-left: 1px solid #5e3f3b; /* outline-variant */
+            border-right: 1px solid #5e3f3b;
         }
-        
-        /* Glitch effect for breaking news */
-        .glitch-hover:hover {
-            animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
-            color: #ffb4aa;
-        }
-        @keyframes glitch {
-            0% { transform: translate(0) }
-            20% { transform: translate(-2px, 2px) }
-            40% { transform: translate(-2px, -2px) }
-            60% { transform: translate(2px, 2px) }
-            80% { transform: translate(2px, -2px) }
-            100% { transform: translate(0) }
+        .audit-line {
+            height: 1px;
+            background: linear-gradient(90deg, #e61919 0%, transparent 100%);
         }
     </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#fefcff",
+                      "outline": "#ae8782",
+                      "on-secondary-fixed": "#131b2e",
+                      "on-primary": "#690003",
+                      "inverse-surface": "#e0e3e5",
+                      "error-container": "#93000a",
+                      "surface-bright": "#363a3b",
+                      "on-primary-fixed": "#410001",
+                      "on-background": "#e0e3e5",
+                      "outline-variant": "#5e3f3b",
+                      "tertiary": "#bcc7de",
+                      "on-error-container": "#ffdad6",
+                      "surface-variant": "#323537",
+                      "on-tertiary-fixed": "#111c2d",
+                      "on-secondary": "#283044",
+                      "tertiary-fixed-dim": "#bcc7de",
+                      "tertiary-fixed": "#d8e3fb",
+                      "inverse-primary": "#c0000b",
+                      "surface-tint": "#ffb4aa",
+                      "surface-container-lowest": "#0b0f10",
+                      "surface-container-low": "#191c1e",
+                      "on-secondary-container": "#adb4ce",
+                      "inverse-on-surface": "#2d3133",
+                      "error": "#ffb4ab",
+                      "on-error": "#690005",
+                      "secondary-fixed": "#dae2fd",
+                      "on-tertiary": "#263143",
+                      "tertiary-container": "#6a758a",
+                      "on-tertiary-fixed-variant": "#3c475a",
+                      "surface": "#101415",
+                      "on-surface": "#e0e3e5",
+                      "surface-container-high": "#272a2c",
+                      "on-surface-variant": "#e8bcb6",
+                      "secondary-fixed-dim": "#bec6e0",
+                      "primary-fixed": "#ffdad5",
+                      "secondary": "#bec6e0",
+                      "on-secondary-fixed-variant": "#3f465c",
+                      "primary-container": "#e61919",
+                      "surface-dim": "#101415",
+                      "secondary-container": "#3f465c",
+                      "surface-container-highest": "#323537",
+                      "surface-container": "#1d2022",
+                      "on-primary-container": "#fffbff",
+                      "on-primary-fixed-variant": "#930006",
+                      "primary-fixed-dim": "#ffb4aa",
+                      "primary": "#ffb4aa",
+                      "background": "#101415"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "0px",
+                      "xl": "0px",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "margin-mobile": "16px",
+                      "max-width": "1280px",
+                      "unit": "4px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Montserrat"],
+                      "body-lg": ["Merriweather"],
+                      "display-lg": ["Montserrat"],
+                      "body-md": ["Merriweather"],
+                      "label-caps": ["JetBrains Mono"],
+                      "headline-md": ["Montserrat"],
+                      "audit-stat": ["Montserrat"],
+                      "headline-lg-mobile": ["Montserrat"]
+              },
+              "fontSize": {
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "audit-stat": ["20px", {"lineHeight": "1.0", "fontWeight": "800"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+      </script>
 </head>
-<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden">
-<!-- TopAppBar -->
-<header class="bg-surface dark:bg-surface-dim docked full-width top-0 border-b border-outline-variant dark:border-outline-variant bg-surface/80 backdrop-blur-md sticky z-50 flex justify-between items-center px-margin-desktop w-full py-4 max-md:px-margin-mobile">
-<div class="flex items-center gap-4">
-<!-- Brand Placeholder - Using text to represent the logo structural anchor -->
-<div class="text-headline-md font-headline-md font-extrabold tracking-tighter text-on-surface dark:text-on-surface flex items-center gap-2">
-<div class="w-10 h-10 bg-primary-container text-on-primary-container flex items-center justify-center font-black text-xl rounded-sm border border-primary">A</div>
-<div class="flex flex-col leading-none">
-<span class="text-[10px] text-primary tracking-widest font-bold">EL</span>
-<span class="text-2xl font-black tracking-tighter">AUDITOR</span>
-</div>
-</div>
-</div>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation (Shell) -->
+<header class="bg-surface/80 backdrop-blur-md border-b border-outline-variant fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4">
+<div class="text-headline-md font-headline-md font-extrabold tracking-tighter text-on-surface">EL AUDITOR</div>
 <nav class="hidden md:flex gap-8">
-<!-- Active state determined as Home / Main due to content intent -->
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-caps text-label-caps" href="#">INICIO</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">Caja Negra</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">Monitor Fiscal</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">Batalla Cultural</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">Archivo</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">Libertad</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">Quiénes Somos</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-caps text-label-caps" href="#">CAJA NEGRA</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">MONITOR FISCAL</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">BATALLA CULTURAL</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">ARCHIVO</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">LIBERTAD</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">QUIÉNES SOMOS</a>
 </nav>
 <div class="flex items-center gap-4">
-<button class="text-primary hover:text-primary-fixed transition-colors">
-<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
-</button>
-<button class="text-primary hover:text-primary-fixed transition-colors">
-<span class="material-symbols-outlined" data-icon="search">search</span>
-</button>
-<!-- Mobile Menu Toggle -->
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
+<span class="material-symbols-outlined text-on-surface cursor-pointer hover:text-primary">search</span>
+<span class="material-symbols-outlined text-on-surface cursor-pointer hover:text-primary">notifications</span>
+<div class="w-8 h-8 bg-surface-container-high border border-outline-variant overflow-hidden">
+<img alt="Logo El Auditor" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKsb4rcX6_ETUFKOiIhLf1SP4NQptdOQU9vmpcC2OFkekihw4LGRJvv5Z9F9F7FENDg58WxkAzxPjHFtnk-Iuto2DfWjT4MwTB_j1UFy3rwtT-E-egxteLHX6PLQa0x6vpEvQRS28eYg-AA2x-BpJup9-3vDjvdIQEAg33NC5a4dmMC6OH1Gfw1V7DQ05n2duqCo2bQK3UvMXeOnKDxe6Kz2vQA04yyNk1o1-ihUfud80aENO4P9f2ZyJw3iXqBaApwOpeGTECpL-s"/>
+</div>
 </div>
 </header>
-<main class="w-full max-w-max-width mx-auto px-margin-desktop py-12 max-md:px-margin-mobile flex flex-col gap-16">
-<!-- Hero Section: Último Momento & Main Image -->
-<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
-<!-- Último Momento Panel -->
-<div class="lg:col-span-5 bg-inverse-on-surface relative overflow-hidden border border-outline-variant flex flex-col justify-center min-h-[400px]">
-<!-- Abstract dark/red texture background via CSS -->
-<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#3a0000] to-inverse-on-surface opacity-80 mix-blend-multiply"></div>
-<div class="absolute inset-0 opacity-20" style="background-image: repeating-linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000), repeating-linear-gradient(45deg, #000 25%, #101415 25%, #101415 75%, #000 75%, #000); background-position: 0 0, 10px 10px; background-size: 20px 20px;"></div>
-<div class="relative z-10 p-8 flex flex-col items-center justify-center text-center h-full">
-<h1 class="text-display-lg font-display-lg text-on-tertiary-container uppercase leading-none mb-6 glitch-hover">
-                        ÚLTIMO<br/>MOMENTO
-                    </h1>
-<div class="h-px w-24 bg-primary mb-6"></div>
-<p class="text-body-md font-body-md text-on-surface-variant max-w-sm">
-                        La auditoría reveló irregularidades significativas en la asignación de fondos públicos. Documentos filtrados confirman el desvío sistemático en obras de infraestructura clave para la provincia.
-                    </p>
+<main class="pt-24 pb-12 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Newspaper Header Meta -->
+<div class="flex flex-wrap justify-between items-end border-b-2 border-on-surface pb-2 mb-8 uppercase font-label-caps text-[10px] tracking-widest text-on-surface-variant">
+<div class="flex gap-4">
+<span>BS. AS. ARGENTINA</span>
+<span>VOL. XXIV — NO. 8.421</span>
+</div>
+<div class="text-center hidden lg:block">
+<span class="text-primary font-bold">AUDITANDO AL PODER. LA TRANSPARENCIA NO SE NEGOCIA.</span>
+</div>
+<div class="flex gap-4">
+<span id="current-date">CARGANDO FECHA...</span>
+<span class="font-bold text-on-surface">EDICIÓN DIGITAL</span>
 </div>
 </div>
-<!-- Main Feature Image -->
-<div class="lg:col-span-7 relative h-[400px] border border-outline-variant group overflow-hidden">
-<img alt="Auditoría gubernamental" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="A stark, dramatic wide-angle shot of a grand, neoclassical government building made of white stone, viewed from a low angle. The sky above is a deep, moody twilight blue, creating high contrast. Red architectural lighting subtly illuminates the building's columns, adding a sense of urgency and scrutiny. The aesthetic is serious, journalistic, and cinematic, fitting a high-stakes investigative report in a dark-mode modern digital interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqbP_JFmnSm5KLslboSCuQMeRSbh6eAi6L12vNevfFxAb9ojH88jgQZuNA6Br5Qif7OyTWUKdK9SX0RbljGX2T-XfnYRyDyZRDG00c7U7FTCiC6DZzuylA8ovtQEsiURE_qeqWfDgo4Um0xjGbGbo-MReKTUw4MvEOiFvtiLrfKmvKEZQpRwwIS8_Vy3pgtm3Bga42QqIgAqwIcPRj6VyKTNWNi_GrnSbynFg1sNeyyYUTWlasOv5jco3FRGUAX4-sDJbxFPnRRhic"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-8 w-full">
-<div class="bg-surface/90 backdrop-blur-sm p-4 border-l-4 border-primary inline-block">
-<h2 class="text-headline-lg font-headline-lg text-on-surface uppercase leading-tight">
-                            AUDITANDO AL<br/>PODER <span class="text-primary">-</span> JUJUY
-                        </h2>
+<!-- Section: Main Featured Article -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-12">
+<div class="lg:col-span-8 flex flex-col justify-center border-r-0 lg:border-r border-outline-variant pr-0 lg:pr-gutter">
+<span class="font-label-caps text-label-caps text-primary-container mb-2 tracking-[0.2em] uppercase">Caja Negra</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg mb-4 leading-none text-on-surface">
+                    LAS CUENTAS QUE EL PODER NO QUIERE QUE VEAS.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 border-l-4 border-primary-container pl-4 italic">
+                    Una investigación exclusiva sobre las partidas presupuestarias discrecionales que alimentan la opacidad institucional en los últimos tres trimestres.
+                </p>
+<div class="flex gap-4 items-center mb-8">
+<button class="bg-primary-container text-on-primary-container px-6 py-3 font-label-caps text-label-caps font-bold hover:bg-primary transition-colors">
+                        LEER INVESTIGACIÓN
+                    </button>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-on-surface-variant">FISCAL AUDIT SCORE</span>
+<span class="font-audit-stat text-audit-stat text-primary-container">98.4% CRITICAL</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4">
+<div class="relative group h-full">
+<img alt="Featured Article Image" class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700 border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE7MdhNqY9fP-Y9kXj0pJlMdOxbqbg4qGYzAD4imLwoGxD3k8Gz-RQyyGtZHsD_-uk2_OsR4ooUr4KqxEdEZbm1NVaygi2rPxroNkiHF2EanNfqIGApYZtcycfpyCzU8_zodu2TDA1s6oXIfKhRPjEGEN5_HU0IFYLyinyHqiGxZf-UAXuYMJjTMWBW3TV8XiBJ0mZLV_A9sJIrhPyElNjCJjQAdPwcWEydDQXc-spwVSMc5Z8MlvBYiCNhBF6Si_pl-yNv9bfE7ec"/>
+<div class="absolute bottom-0 left-0 bg-surface-container-lowest/90 backdrop-blur-sm p-4 border-t border-primary-container w-full">
+<span class="font-label-caps text-[10px] text-on-surface">REF: ARCHIVO_042_B.JPG</span>
 </div>
 </div>
 </div>
 </section>
-<!-- El Manifiesto -->
-<section class="border-y border-outline-variant py-12 relative structural-grid">
-<div class="max-w-4xl mx-auto text-center">
-<span class="material-symbols-outlined text-primary text-4xl mb-6 fill">gavel</span>
-<h3 class="text-headline-lg font-headline-lg text-on-surface mb-8">
-                    "EL DATO MATA AL RELATO. LA INFORMACIÓN NO SE NEGOCIA, SE AUDITA."
-                </h3>
-<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
-                    Nacimos para fiscalizar el uso de los recursos públicos. No aceptamos narrativas prefabricadas; exigimos transparencia total. Cada investigación está respaldada por datos duros, documentos oficiales y un compromiso inquebrantable con la verdad. En El Auditor, la rendición de cuentas es la única moneda de curso legal.
+<div class="audit-line mb-12"></div>
+<!-- Section: Middle Row (Asymmetric Columns) -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-12">
+<!-- Article Block 1 -->
+<article class="flex flex-col md:flex-row gap-6 border border-outline-variant bg-surface-container-low p-4 hover:bg-surface-container transition-colors group">
+<div class="w-full md:w-1/3 shrink-0 overflow-hidden border border-outline-variant">
+<img alt="Article Image 1" class="w-full h-full object-cover grayscale group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH1Ct5q16BK7593HF0GingQXe732CKtDk8Cws_0dx0g_eYdgSCLHbfCIWAvEaugH5U6Rp6Pro1x6uNq5sofP5gEZOTddGvfbDPq5DSzcg3n5--rbkLxsUEsF8YAHBAxCbFAuuIrCzvcuGPLk-Q40FGCQd3eyO-HW3JwEz7XN6TL7Q8dPUezKCRtECXHEdGodnqx1tH4PcucAKH-NnopOWQURrTaQCbtf25Z5rqJWUJlikptYAqeFdiiJ_vdtOHqSktc60rLCe45Dlw"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[11px] text-primary-container mb-2 uppercase">Monitor Fiscal</span>
+<h2 class="font-headline-md text-headline-md mb-2 text-on-surface leading-tight">
+                        EL AVANCE DEL DÉFICIT EN LAS PROVINCIAS DEL NORTE.
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                        Nuestra red de monitoreo detectó inconsistencias por más de 150 millones en giros directos no registrados en la contabilidad central.
+                    </p>
+</div>
+</article>
+<!-- Article Block 2 -->
+<article class="flex flex-col md:flex-row gap-6 border border-outline-variant bg-surface-container-low p-4 hover:bg-surface-container transition-colors group">
+<div class="w-full md:w-1/3 shrink-0 overflow-hidden border border-outline-variant">
+<img alt="Article Image 2" class="w-full h-full object-cover grayscale group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKx9DMcNU3-KkaiNL8s10P_Z5Tt4n7BB3f9jDgKD99BaQwYng7bvwExo2GyfX-_X7eF_yiwXJFQ-tHhZFgD_DWEeoUCD94yHRw01knQwWPpdcDnLVTp71RCalP5wQv9dTFilDZcmX6QpFVGUgANV36hiPkcSJ6xDuiyW4xwV5V7x0tP2S1qL7_pUI0QtGfQgC8AFG8FbgNG4aWV-nDd0gCoPWT1VaTKxKOCngkroC7zee5-73e9MLZRxISXyx50f7E5AnZGs3WsX8n"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[11px] text-primary-container mb-2 uppercase">Batalla Cultural</span>
+<h2 class="font-headline-md text-headline-md mb-2 text-on-surface leading-tight">
+                        REFORMULANDO EL RELATO DE LA TRANSPARENCIA.
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                        ¿Por qué la sociedad civil ha dejado de exigir rendición de cuentas? Un análisis profundo sobre la apatía fiscal y sus consecuencias.
+                    </p>
+</div>
+</article>
+</section>
+<div class="h-px bg-outline-variant mb-12"></div>
+<!-- Section: Bottom Row (Text Summaries) -->
+<section class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-outline-variant">
+<div class="pr-0 md:pr-8 py-6 md:py-0">
+<h3 class="font-headline-md text-[20px] mb-3 text-on-surface uppercase border-b border-primary-container pb-2">Archivo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Recuperamos los documentos del 2012 que demuestran el origen de la deuda actual. Un viaje a las raíces de la crisis.
                 </p>
 </div>
-</section>
-<!-- Secciones Grid -->
-<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-gutter">
-<!-- Card 1: Caja Negra -->
-<div class="bg-surface-container-high border border-outline-variant hover:border-primary transition-colors flex flex-col group relative overflow-hidden">
-<div class="h-32 bg-inverse-on-surface relative border-b border-outline-variant overflow-hidden">
-<img class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500" data-alt="Macro photography of shredded paper documents illuminated by a harsh, dramatic red light against a pitch-black background. The scene implies financial secrecy, shredded evidence, and urgent forensic investigation. High contrast, sharp details, brutalist investigative journalism aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmwFYVBOdrvutvQKsfq3xBZ5kGvF7pOGzOokDKhNkUtpVgn_yiTot3drrLgLoWkaCFQXb72F9KBh3hwItDXHJ4P9nzfCPB61Ob9J4km8SZSNJcpHdk-kH3oTVM_56Hfd6aD53wtvx3A9OQOgnL7DeCZeGsTCdNswHQLw8Wuyx3KciWKYrnCaKKYxtl8jy-jaVKOHxFrDH6BexJ5iS1hrsldaSRBX8jAmOLEtP_eGeOBZHAEGOv7TmBGE9EzyEN7L87rllUyT-kxmoX"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high to-transparent"></div>
-<span class="material-symbols-outlined absolute bottom-4 left-4 text-primary text-3xl">account_balance</span>
+<div class="px-0 md:px-8 py-6 md:py-0">
+<h3 class="font-headline-md text-[20px] mb-3 text-on-surface uppercase border-b border-primary-container pb-2">Libertad</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Entrevista exclusiva con los auditores que renunciaron tras las presiones oficiales. "No podíamos seguir mintiendo".
+                </p>
 </div>
-<div class="p-6 flex-1 flex flex-col">
-<h4 class="font-label-caps text-label-caps text-primary mb-2">INVESTIGACIÓN TRIBUTARIA</h4>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-4">CAJA NEGRA</h3>
-<p class="text-body-md font-body-md text-on-surface-variant mt-auto">
-                        Análisis profundo de la recaudación, evasión y el destino opaco de los fondos fiscales en la provincia.
-                    </p>
-</div>
-<div class="h-1 w-full bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left absolute bottom-0"></div>
-</div>
-<!-- Card 2: Monitor Fiscal -->
-<div class="bg-surface-container-high border border-outline-variant hover:border-secondary transition-colors flex flex-col group relative overflow-hidden">
-<div class="h-32 bg-inverse-on-surface relative border-b border-outline-variant overflow-hidden">
-<img class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500" data-alt="A close up of complex data charts and graphs displayed on a dark computer screen, glowing with cool blue and stark white lines. The image signifies economic monitoring, data analysis, and financial tracking. High-tech, forensic, and analytical mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0mbwt6UPWyC8U2WRjB_cHww_-jbtigUPIsbClQcUDM4vlWiPbxU5Vg2voQKBFBsNZyVr6h-0pTnlkfxFSe2l6_0qsLmtPtM0RmqABLEnDi1dIqpKUR6w5-zeMTHld2GjqG2nHvypc_4yW7EW8-I--1DUlf1kHMKWRpHPQLlSYi4ZU7oSm_ZfX_dC5vwVtim2tm1Z3Rzc25a7qVs4GpkmIlw7-bPuRa5u4kwISvoA_wlXLv4Y-hsQBVAgpGhstAXIUk9fOOI6lepp9"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high to-transparent"></div>
-<span class="material-symbols-outlined absolute bottom-4 left-4 text-secondary text-3xl">trending_up</span>
-</div>
-<div class="p-6 flex-1 flex flex-col">
-<h4 class="font-label-caps text-label-caps text-secondary mb-2">IMPACTO ECONÓMICO</h4>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-4">MONITOR FISCAL</h3>
-<p class="text-body-md font-body-md text-on-surface-variant mt-auto">
-                        Seguimiento en tiempo real del gasto público, licitaciones y el verdadero costo del Estado en Jujuy.
-                    </p>
-</div>
-</div>
-<!-- Card 3: Batalla Cultural -->
-<div class="bg-surface-container-high border border-outline-variant hover:border-tertiary transition-colors flex flex-col group relative overflow-hidden">
-<div class="h-32 bg-inverse-on-surface relative border-b border-outline-variant overflow-hidden">
-<img class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500" data-alt="A stark black and white photograph of an old, weathered printing press or vintage typewriter keys, subtly illuminated by a cold, clinical light. It represents the power of the written word, ideological struggle, and the clash of ideas in a severe, brutalist style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2WTeEJ8tvSilgSx9JsGjAugwiZMtewG7hDqGz158yRtVul_qUCd6NrhtozIp0ZwV5IZ_yr8v8FWEqv7srBCZ1MFpJkNK4FQ_5mP9uAdxvjS9AmV4JjXvlTgTK64BTkQ0DRlCqP-cvYh6qkNbcEbbQt27vuasJpQPyokMIBpHap9zPHK4VSQV_Xw9rOxyk7lshDh33q1JSYa4LBFs9Krg5PJNi3a2zhODF7p1DZjFUoVl22N6yyNzElYVnocFIsr0eYQzgGYcgfo1v"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high to-transparent"></div>
-<span class="material-symbols-outlined absolute bottom-4 left-4 text-tertiary text-3xl">menu_book</span>
-</div>
-<div class="p-6 flex-1 flex flex-col">
-<h4 class="font-label-caps text-label-caps text-tertiary mb-2">IDEAS DE LIBERTAD</h4>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-4">BATALLA CULTURAL</h3>
-<p class="text-body-md font-body-md text-on-surface-variant mt-auto">
-                        Desmontando el relato oficial. Columnas de opinión, debate de ideas y la defensa del pensamiento crítico.
-                    </p>
-</div>
-</div>
-<!-- Card 4: El Archivo -->
-<div class="bg-surface-container-high border border-outline-variant hover:border-on-surface transition-colors flex flex-col group relative overflow-hidden">
-<div class="h-32 bg-inverse-on-surface relative border-b border-outline-variant overflow-hidden">
-<img class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500" data-alt="Rows of dimly lit, monolithic metal filing cabinets stretching into the distance in a dark, concrete room. The mood is secretive, archival, and formal. A single sharp beam of cool white light cuts across the metal surface, highlighting the concept of uncovered history." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5uGTUepwixscF2eD_Z2QJeURjCJ3qFqh_S4FYkSvsUHs3g44nHb7P2JgNdK88UPSTxEveorO0-xjJ5CJNte4EF6JKwm5vz5rYeXRyR4F6oI75IeoYKF_Vp5UnjF4e5nGeAwKmsLoouRp9wBzj3bDACfsyuA4caJN8wKa9DeYbu_9kZUc_NcGeDL-LB9d0KXcsbtIVkpci9x4Ksyp5YmLh5mxWckIz1jGDg9jM7AHZ1OvIK5KYLy7Ou2iBTP-0fT4mFb-uRaOUQCCg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high to-transparent"></div>
-<span class="material-symbols-outlined absolute bottom-4 left-4 text-on-surface text-3xl">inventory_2</span>
-</div>
-<div class="p-6 flex-1 flex flex-col">
-<h4 class="font-label-caps text-label-caps text-on-surface mb-2">MEMORIA HISTÓRICA</h4>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-4">EL ARCHIVO</h3>
-<p class="text-body-md font-body-md text-on-surface-variant mt-auto">
-                        Nadie resiste un archivo. Repositorio de promesas incumplidas, fallos judiciales y contradicciones políticas.
-                    </p>
-</div>
-</div>
-<!-- Card 5: Libertad Individual -->
-<div class="bg-surface-container-high border border-outline-variant hover:border-primary-fixed transition-colors flex flex-col group relative overflow-hidden">
-<div class="h-32 bg-inverse-on-surface relative border-b border-outline-variant overflow-hidden">
-<img class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500" data-alt="A high-contrast silhouette of an individual working intensely at a workbench or forge in a dark, industrial setting. Sparks fly, illuminating the scene with warm, fierce light. Represents hard work, entrepreneurship, and individual liberty against a dark, serious backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS4-3r4J09XVz3NmQuuoApPxIT8c_d2sfmhl-l3JPysDrAX27Of2Lyuo6avqv8kNwoU_SgBh0b7-p-0fMDTssjbw3nMA-23ki_FZF7VUA79iOFpGI3TRuVwFPnXd8Q4puHnKWw2UxE1-LvRdQHWkDclD7PkOcdzLTqFORq9qg8HEeY05O0FOxVjQIY2S1OTpjSr672bw0JQx9-BKZKsUC63Pn6d4vvhnt7LCIkIjlgLBS1szm3r4IseGCbBopkf_tPeNgh0wwZH-Oq"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high to-transparent"></div>
-<span class="material-symbols-outlined absolute bottom-4 left-4 text-primary-fixed text-3xl">lightbulb</span>
-</div>
-<div class="p-6 flex-1 flex flex-col">
-<h4 class="font-label-caps text-label-caps text-primary-fixed mb-2">HISTORIAS</h4>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-4">LIBERTAD INDIVIDUAL</h3>
-<p class="text-body-md font-body-md text-on-surface-variant mt-auto">
-                        El motor de la provincia. Historias de emprendedores y ciudadanos que construyen al margen del Estado.
-                    </p>
-</div>
+<div class="pl-0 md:pl-8 py-6 md:py-0">
+<h3 class="font-headline-md text-[20px] mb-3 text-on-surface uppercase border-b border-primary-container pb-2">Urgente</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Última hora: La Auditoría General de la Nación convoca a sesión extraordinaria por irregularidades en compras de salud.
+                </p>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-container-highest dark:bg-surface-container-lowest full-width border-t-4 border-primary grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop py-12 w-full max-md:px-margin-mobile">
-<!-- Brand/Logo Col -->
-<div class="flex flex-col gap-4">
-<div class="text-headline-md font-headline-md font-bold text-on-surface flex items-center gap-2">
-<div class="w-8 h-8 bg-primary-container text-on-primary-container flex items-center justify-center font-black text-sm rounded-sm border border-primary">A</div>
-<span class="tracking-tighter">EL AUDITOR</span>
-</div>
-<p class="text-body-md font-body-md text-on-surface-variant max-w-xs mt-4">
-                © 2024 EL AUDITOR - AUDITANDO AL PODER. LA TRANSPARENCIA NO SE NEGOCIA.
+<footer class="bg-surface-container-lowest border-t-4 border-primary-container mt-12 py-12 px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div>
+<div class="text-headline-md font-headline-md font-bold text-on-surface mb-4">EL AUDITOR</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+                Información quirúrgica para ciudadanos que no aceptan medias verdades.
             </p>
-<div class="flex gap-4 mt-2">
-<!-- Social placeholders -->
-<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors">public</span>
-<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors">mail</span>
-<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors">share</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-primary mb-2">SECCIONES</span>
+<div class="grid grid-cols-2 gap-2">
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-all underline" href="#">Caja Negra</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-all underline" href="#">Monitor Fiscal</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-all underline" href="#">Batalla Cultural</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-all underline" href="#">Archivo</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-all underline" href="#">Privacidad</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-all underline" href="#">Contacto</a>
 </div>
 </div>
-<!-- Links Col -->
-<div class="flex flex-col gap-3">
-<h4 class="font-label-caps text-label-caps text-on-surface mb-2 border-b border-outline-variant pb-2 inline-block w-max">SECCIONES</h4>
-<a class="text-on-surface-variant hover:text-primary transition-all underline font-label-caps text-label-caps" href="#">Caja Negra</a>
-<a class="text-on-surface-variant hover:text-primary transition-all underline font-label-caps text-label-caps" href="#">Monitor Fiscal</a>
-<a class="text-on-surface-variant hover:text-primary transition-all underline font-label-caps text-label-caps" href="#">Batalla Cultural</a>
-<a class="text-on-surface-variant hover:text-primary transition-all underline font-label-caps text-label-caps" href="#">Archivo</a>
+<div class="flex flex-col justify-between items-end text-right">
+<div class="flex gap-4 mb-4">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">public</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">rss_feed</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">shield</span>
 </div>
-<!-- Links / Info Col -->
-<div class="flex flex-col gap-3">
-<h4 class="font-label-caps text-label-caps text-on-surface mb-2 border-b border-outline-variant pb-2 inline-block w-max">LEGAL</h4>
-<a class="text-on-surface-variant hover:text-primary transition-all underline font-label-caps text-label-caps" href="#">Privacidad</a>
-<a class="text-on-surface-variant hover:text-primary transition-all underline font-label-caps text-label-caps" href="#">Contacto</a>
-<div class="mt-6 flex flex-col gap-2">
-<div class="flex items-center gap-2 text-on-surface-variant text-sm">
-<span class="material-symbols-outlined text-primary text-base">location_on</span>
-<span>San Salvador de Jujuy, Argentina</span>
-</div>
-</div>
+<p class="font-label-caps text-[10px] text-on-surface-variant leading-tight">
+                © 2024 EL AUDITOR - AUDITANDO AL PODER. <br/>LA TRANSPARENCIA NO SE NEGOCIA.
+            </p>
 </div>
 </footer>
+<!-- Interactive Layer -->
+<script>
+        // Update current date in Spanish format
+        const dateElement = document.getElementById('current-date');
+        const now = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        dateElement.textContent = now.toLocaleDateString('es-ES', options).toUpperCase();
+
+        // Simple parallax effect on scroll for image grayscale
+        window.addEventListener('scroll', () => {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                const rect = img.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    const visiblePct = (window.innerHeight - rect.top) / window.innerHeight;
+                    if (visiblePct > 0.5) {
+                        img.style.filter = `grayscale(${Math.max(0, 1.2 - visiblePct)})`;
+                    }
+                }
+            });
+        });
+    </script>
 </body></html>
